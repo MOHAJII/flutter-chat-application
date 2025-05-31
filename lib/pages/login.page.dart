@@ -65,10 +65,9 @@ class _LoginPageState extends State<LoginPage> {
         backgroundColor: Colors.green,
       );
 
-      // Navigate to bot page after a brief delay
+      // Navigate to model selection page after a brief delay
       await Future.delayed(const Duration(milliseconds: 500));
       if (mounted) {
-        Navigator.pushReplacementNamed(context, "/bot");
       }
     } else {
       _showSnackBar("Invalid username or password. Please try again.");
